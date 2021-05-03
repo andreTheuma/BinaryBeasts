@@ -5,42 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0542e77b-dfd1-41ba-8a4b-7a0f7f733112" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sport.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/binarybeasts/sport/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binarybeasts/sport/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/binarybeasts/sport/controllers/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binarybeasts/sport/controllers/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/binarybeasts/sport/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binarybeasts/sport/models/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/binarybeasts/sport/models/ClientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binarybeasts/sport/models/ClientEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/binarybeasts/sport/services/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binarybeasts/sport/services/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/binarybeasts/sport/services/ClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binarybeasts/sport/services/ClientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/binarybeasts/sport/controllers/ClientControllerIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/binarybeasts/sport/controllers/ClientControllerIntegrationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/binarybeasts/sport/services/ClientEntityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/binarybeasts/sport/services/ClientEntityServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/SportApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/SportApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/config/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/config/SwaggerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/controllers/BookingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/controllers/BookingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/controllers/ClientController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/controllers/ClientController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/controllers/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/controllers/ClientController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/exceptions/ClientInvalidException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/exceptions/ClientInvalidException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/exceptions/ClientNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/exceptions/ClientNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/exceptions/CustomGlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/exceptions/CustomGlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/Booking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/BookingEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/BookingEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/BookingRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/BookingRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/BookingResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/BookingResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/ClientEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/ClientEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/ClientRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/ClientRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/ClientResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/models/ClientResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/repositories/BookingRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/repositories/BookingRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/respositories/ClientRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/respositories/ClientRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/services/BookingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/services/BookingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/services/BookingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/services/BookingServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/services/ClientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/services/ClientService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/services/ClientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/binarybeasts/sport/services/ClientServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/binarybeasts/sport/SportApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/binarybeasts/sport/SportApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/binarybeasts/sport/controllers/ClientControllerIntegrationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/binarybeasts/sport/controllers/ClientControllerIntegrationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/binarybeasts/sport/services/ClientEntityServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/binarybeasts/sport/services/ClientEntityServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,31 +52,8 @@
       <recent name="com.binarybeasts.sport" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ClientControllerIntegrationTests">
-    <configuration name="All in sport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sport" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientControllerIntegrationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sport" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.binarybeasts.sport.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.binarybeasts.sport.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.binarybeasts.sport.controllers.ClientControllerIntegrationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientEntityServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ClientEntityServiceTest.testGetAllUsersValidUsers">
+    <configuration name="ClientEntityServiceTest.testGetAllUsersValidUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sport" />
       <extension name="coverage">
         <pattern>
@@ -120,28 +63,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.binarybeasts.sport.services" />
       <option name="MAIN_CLASS_NAME" value="com.binarybeasts.sport.services.ClientEntityServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientEntityServiceTest.testSaveUserOver18" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sport" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.binarybeasts.sport.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.binarybeasts.sport.services" />
-      <option name="MAIN_CLASS_NAME" value="com.binarybeasts.sport.services.ClientEntityServiceTest" />
-      <option name="METHOD_NAME" value="testSaveUserOver18" />
+      <option name="METHOD_NAME" value="testGetAllUsersValidUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientEntityServiceTest.testSaveUserUnder18" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientEntityServiceTest.testGetUserByIdInvalidId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sport" />
       <extension name="coverage">
         <pattern>
@@ -151,7 +79,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.binarybeasts.sport.services" />
       <option name="MAIN_CLASS_NAME" value="com.binarybeasts.sport.services.ClientEntityServiceTest" />
-      <option name="METHOD_NAME" value="testSaveUserUnder18" />
+      <option name="METHOD_NAME" value="testGetUserByIdInvalidId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientEntityServiceTest.testGetUserByIdValidId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.binarybeasts.sport.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.binarybeasts.sport.services" />
+      <option name="MAIN_CLASS_NAME" value="com.binarybeasts.sport.services.ClientEntityServiceTest" />
+      <option name="METHOD_NAME" value="testGetUserByIdValidId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientEntityServiceTest.testSaveUserOver14" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.binarybeasts.sport.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.binarybeasts.sport.services" />
+      <option name="MAIN_CLASS_NAME" value="com.binarybeasts.sport.services.ClientEntityServiceTest" />
+      <option name="METHOD_NAME" value="testSaveUserOver14" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientEntityServiceTest.testSaveUserUnder14" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.binarybeasts.sport.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.binarybeasts.sport.services" />
+      <option name="MAIN_CLASS_NAME" value="com.binarybeasts.sport.services.ClientEntityServiceTest" />
+      <option name="METHOD_NAME" value="testSaveUserUnder14" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ClientControllerIntegrationTests" />
-        <item itemvalue="JUnit.ClientEntityServiceTest" />
-        <item itemvalue="JUnit.All in sport" />
-        <item itemvalue="JUnit.ClientEntityServiceTest.testSaveUserUnder18" />
-        <item itemvalue="JUnit.ClientEntityServiceTest.testSaveUserOver18" />
+        <item itemvalue="JUnit.ClientEntityServiceTest.testGetAllUsersValidUsers" />
+        <item itemvalue="JUnit.ClientEntityServiceTest.testGetUserByIdInvalidId" />
+        <item itemvalue="JUnit.ClientEntityServiceTest.testGetUserByIdValidId" />
+        <item itemvalue="JUnit.ClientEntityServiceTest.testSaveUserUnder14" />
+        <item itemvalue="JUnit.ClientEntityServiceTest.testSaveUserOver14" />
       </list>
     </recent_temporary>
   </component>

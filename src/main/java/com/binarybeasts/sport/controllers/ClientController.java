@@ -1,6 +1,7 @@
 package com.binarybeasts.sport.controllers;
 
 import com.binarybeasts.sport.exceptions.ClientInvalidException;
+import com.binarybeasts.sport.exceptions.ClientNotFoundException;
 import com.binarybeasts.sport.models.*;
 import com.binarybeasts.sport.services.ClientService;
 import org.modelmapper.ModelMapper;
@@ -13,7 +14,6 @@ import javax.validation.Valid;
 import java.util.List;
 import java.lang.reflect.Type;
 import org.modelmapper.TypeToken;
-
 import java.util.UUID;
 
 @RestController
@@ -28,8 +28,8 @@ public class ClientController {
     // handle all crud operations for user
 
     @GetMapping("/allclients")
-    @ResponseStatus(HttpStatus.ACCEPTED)
     List<ClientResponse> findAll() {
+        modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
         List<Client> clients = clientService.getAllClients();
 
         Type responseType = new TypeToken<List<ClientResponse>>() {
@@ -45,23 +45,39 @@ public class ClientController {
         modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
         Client client = modelMapper.map(clientRequest, Client.class);
 
-        client = clientService.saveClient(client);
+        client = clientService.saveClient(client).orElseThrow(() -> new ClientInvalidException());;
 
         ClientResponse clientResponse = modelMapper.map(client, ClientResponse.class);
         return clientResponse;
     }
 
+    @GetMapping("/clients/{id}")
     ClientResponse findOne(@PathVariable Long clientId) {
-        // TODO
-        return null;
+        Client client = clientService.getClientById(clientId).orElseThrow(() -> new ClientNotFoundException(clientId));
+
+        ClientResponse clientResponse = modelMapper.map(client, ClientResponse.class);
+
+        return clientResponse;
     }
 
-   ClientResponse saveOrUpdate(@RequestBody ClientRequest clientRequest, @PathVariable UUID clientId) {
-        // TODO
-        return null;
+    @PutMapping("/client/{id}")
+    ClientResponse saveOrUpdate(@RequestBody ClientRequest clientRequest, @PathVariable Long clientId) {
+        Client existentClient = clientService.getClientById(clientId).orElseThrow(() -> new ClientNotFoundException(clientId));
+
+        Client newClient = modelMapper.map(clientRequest, Client.class);
+
+        newClient.setId(existentClient.getId());
+
+        Client updatedClient = clientService.saveClient(newClient).orElseThrow(() -> new ClientInvalidException());
+
+        ClientResponse clientResponse = modelMapper.map(updatedClient, ClientResponse.class);
+
+        return clientResponse;
     }
 
-    void deleteClient(@PathVariable UUID clientId) {
-        // TODO
+    @DeleteMapping("/clients/{id}")
+    void deleteClient(@PathVariable Long clientId) {
+
+        clientService.deleteClientById(clientId);
     }
 }

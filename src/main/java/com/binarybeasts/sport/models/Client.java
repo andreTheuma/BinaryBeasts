@@ -12,7 +12,7 @@ public class Client {
     private Boolean isActive;
 
     public Client() {
-        this(null, null, 0, null, null);
+        this(null, null, null, 0, null, null);
     }
 
     public Client(String id, String fullName, int age, String email, String mobileNumber) {

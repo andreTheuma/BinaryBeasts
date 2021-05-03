@@ -22,6 +22,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.ActiveProfiles;
 
 import javax.validation.constraints.Pattern;
+import java.util.Optional;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
@@ -49,7 +50,7 @@ public class ClientControllerIntegrationTests {
         Client serviceClient = new Client(1L, "123456L", "Joe Borg", 19, "joeborg@gmail.com", "79123456");
         serviceClient.setIsActive(true);
 
-        when(clientMockService.saveClient(any(Client.class))).thenReturn(serviceClient);
+        when(clientMockService.saveClient(any(Client.class))).thenReturn(Optional.of(serviceClient));
 
         ResponseEntity<String> responseEntity =
                 testRestTemplate.postForEntity(endpoint, clientRequest, String.class);

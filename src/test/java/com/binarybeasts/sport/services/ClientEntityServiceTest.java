@@ -11,6 +11,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ActiveProfiles;
 
+import java.util.Optional;
+
 import static org.mockito.Mockito.*;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
@@ -31,7 +33,7 @@ public class ClientEntityServiceTest {
     // Under 14 --> Inactive
     @Test
     @Deprecated
-    public void testSaveUserUnder18() {
+    public void testSaveUserUnder14() {
         Client clientToBeSaved = new Client(1L, "123456L", "Joe Borg", 13, "joeborg@gmail.com", "79123456");
 
         Client expectedSavedClient = new Client(1L, "123456L", "Joe Borg", 13, "joeborg@gmail.com", "79123456");
@@ -40,16 +42,16 @@ public class ClientEntityServiceTest {
         ClientEntity outputClientEntity = new ClientEntity(1L, "123456L", "Joe Borg", 13, "joeborg@gmail.com", "79123456", false);
         when(clientMockRepository.save(any(ClientEntity.class))).thenReturn(outputClientEntity);
 
-        Client savedClient = clientService.saveClient(clientToBeSaved);
+        Optional<Client> savedClient = clientService.saveClient(clientToBeSaved);
 
-        assertThat(savedClient).isEqualToComparingFieldByField(expectedSavedClient);
+        assertThat(savedClient.get()).isEqualToComparingFieldByField(expectedSavedClient);
 
         verify(clientMockRepository, times(1)).save(any(ClientEntity.class));
     }
 
     @Deprecated
     @Test
-    public void testSaveUserOver18() {
+    public void testSaveUserOver14() {
         Client clientToBeSaved = new Client(1L, "123456L", "Joe Borg", 14, "joeborg@gmail.com", "79123456");
 
         Client expectedSavedClient = new Client(1L, "123456L", "Joe Borg", 14, "joeborg@gmail.com", "79123456");
@@ -58,9 +60,9 @@ public class ClientEntityServiceTest {
         ClientEntity outputClientEntity = new ClientEntity(1L, "123456L", "Joe Borg", 14, "joeborg@gmail.com", "79123456", true);
         when(clientMockRepository.save(any(ClientEntity.class))).thenReturn(outputClientEntity);
 
-        Client savedClient = clientService.saveClient(clientToBeSaved);
+        Optional<Client> savedClient = clientService.saveClient(clientToBeSaved);
 
-        assertThat(savedClient).isEqualToComparingFieldByField(expectedSavedClient);
+        assertThat(savedClient.get()).isEqualToComparingFieldByField(expectedSavedClient);
 
         verify(clientMockRepository, times(1)).save(any(ClientEntity.class));
     }

@@ -19,7 +19,7 @@ public class ClientEntity {
     private Boolean isActive;
 
     public ClientEntity() {
-
+        this(null, null, null, 0, null, null, null);
     }
 
     public ClientEntity(String id, String fullName, int age, String email, String mobileNumber, Boolean isActive) {

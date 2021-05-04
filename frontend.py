@@ -14,7 +14,7 @@ def post_req(ending, data):
 	result = requests.post(fullPath(ending), headers=headers, json=data)
 	return result.json()
 
-def get_req(url):
+def get_req(ending):
 	result = requests.get(url=fullPath(ending))
 	return result.json()
 
@@ -35,7 +35,8 @@ def manageClients():
 def manageBookings():
 	menu = """
 1.	Schedlue new booking
-2.	Remove booking"""
+2.	List all bookings
+3.	Remove booking"""
 	print(menu)
 	
 	def schedule():
@@ -56,6 +57,11 @@ def manageBookings():
 		else:
 			print("Success")
 			print("Booking id: " + str(result["id"]))
+
+	def listAll():
+		result = get_req("allScheds")
+		for booking in result:
+			print(booking)
 	
 	def remove():
 		bid = input("booking id >> ")
@@ -64,7 +70,8 @@ def manageBookings():
 
 	bookingFuncs = {
 		1: schedule,
-		2: remove
+		2: listAll,
+		3: remove
 	}
 
 	num = int(input(">> "))

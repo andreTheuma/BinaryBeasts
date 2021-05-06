@@ -26,7 +26,7 @@ public class Resource {
         this.area = area;
     }
     
-    public long getID(){
+    public Long getID(){
         return this.resourceId;
     }
 

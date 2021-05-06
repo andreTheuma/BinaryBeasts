@@ -1,5 +1,8 @@
 package com.binarybeasts.sport.respositories;
 
-public class ResourceRepository {
+import com.binarybeasts.sport.models.ResourceEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ResourceRepository extends JpaRepository<ResourceEntity, Long> {
     
 }

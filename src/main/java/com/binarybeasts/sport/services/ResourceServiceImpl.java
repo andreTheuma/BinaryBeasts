@@ -12,8 +12,7 @@ import com.binarybeasts.sport.models.Resource;
 import com.binarybeasts.sport.models.ResourceEntity;
 import com.binarybeasts.sport.models.ResourceRequest;
 import com.binarybeasts.sport.models.ResourceResponse;
-import com.binarybeasts.sport.respositories.ResourceRepository;
-
+import com.binarybeasts.sport.repositories.ResourceRepository;
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;

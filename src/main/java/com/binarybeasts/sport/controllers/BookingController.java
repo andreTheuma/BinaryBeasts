@@ -9,6 +9,7 @@ import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 import javax.validation.Valid;
 import java.util.List;
 import java.util.ArrayList;
@@ -42,6 +43,11 @@ public class BookingController {
     BookingResponse addBooking(@Valid @RequestBody BookingRequest bookingRequest) {
 				modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
         Booking bo = modelMapper.map(bookingRequest, Booking.class);
+					
+				//Use webclient instead
+				//final String url = "http://localhost:8080/client/1";
+				//RestTemplate rt = new RestTemplate();
+				//Client client = rt.getForObject(url, Client.class);
 
         Booking savedBooking = bookingService.saveBooking(bo);
 
